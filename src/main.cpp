@@ -126,7 +126,7 @@ void write_error(char code) {
 void str_to_bytes(const char *str, char data[95]) {
 	char hexstr[3] = { 0, 0, 0 };
 
-	for (int i = 0; str[i] != 0 && str[i + 1] != 0; i += 2) {
+	for (int i = 0; str[i] != 0 && str[i + 1] != 0 && i < 190; i += 2) {
 		hexstr[0] = str[i];
 		hexstr[1] = str[i + 1];
 
