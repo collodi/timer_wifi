@@ -29,7 +29,7 @@ void setup() {
   	Serial.begin(115200);
 	Serial.setTimeout(200);
 
-	delay(2000);
+	delay(40000);
 
 	pinMode(2, OUTPUT);
 
